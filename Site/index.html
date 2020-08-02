@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Entretien de Chaudière - Chauffagiste</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+</head>
+
+<body onload="init()">
+    <header class="flex">
+        <nav  id="desktop-nav">
+            <div id="logo-desktop">
+                <a href="index.html">
+                    <figure></figure>
+                </a>
+            </div>
+            <div id="navigation-desktop">
+                <ul>
+                    <li><a href="">Fonctionnalités</a></li>
+                    <li><a href="">Tarifs</a></li>
+                    <li><a href="">F.A.Q</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <nav  id="mobile-nav">
+            <div id="logo-mobile">
+                <a href="index.html">
+                    <figure></figure>
+                </a>
+            </div>
+            <div id="navigation-mobile">
+                <div id="btn-burger">
+                    <figure></figure>
+                </div>
+                <div id="navigation">
+                <ul>
+                    <li><a href="">Fonctionnalités</a></li>
+                    <li><a href="">Tarifs</a></li>
+                    <li><a href="">F.A.Q</a></li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="pres">
+            <div id="left-pres">
+                <div class="img-pres">
+                    <figure></figure>
+                </div>
+            </div>
+
+            <div id="right-pres">
+                <div class="text-pres">
+                    <h2>LE LOGICIEL SAAS QUI VOUS APPORTE DES CLIENTS</h2>
+                    <p>
+                        Que diriez-vous d'utiliser le meilleur de la technologie, tout en bénéficiant de l'apport de
+                        nouveaux clients ?<br>
+                        Un chiffre d'affaires qui se consolide et augmente grâce à la gestion automatisée de votre
+                        portefeuille et les nouveaux clients apportés par le site.
+                    </p>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="number" class="flex">
+            <div id="container_infos">
+                <div class="infos"><span id="compteur1" class="card"></span>
+                    <p>de temps économisé</p>
+                </div>
+                <div class="infos"><span id="compteur2" class="card"></span>
+                    <p>nouveaux clients en moyenne</p>
+                </div>
+                <div class="infos"><span id="compteur3" class="card"></span>
+                    <p>de chiffre d'affaires supplémentaire</p>
+                </div>
+            </div>
+        </section>
+
+        
+        <section id="solutions">
+
+            <div class="title">
+                <h2>Des fonctions adapté a vos besoins</h2>
+            </div>
+            
+            <div id="show-solutions">
+                <div id="illu_fonction">
+                    <h3>Cliquer sur les icônes en dessous pour plus de renseignement</h3>
+                </div>
+            </div>
+
+            <div id="list-solutions">
+               
+                <div class="container-icone" onclick="illu('1')">
+                    <div class="icone">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-credit-card-2-back-fill"
+                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v5H0V4zm11.5 1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-2z" />
+                            <path d="M0 11v1a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-1H0z" />
+                        </svg>
+                    </div>
+                    <div class="text">
+                        <!-- <h3>Paiement  CB,
+                            Paypal, virement</h3> -->
+                    </div>
+                </div>
+            </a>
+                <div class="container-icone" onclick="illu('2')">
+                    <div class="icone">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-envelope-fill"
+                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z" />
+                        </svg>
+                    </div>
+                    <div class="text">
+                        <!-- <h3>Gestion de vos RDV </h3> -->
+                    </div>
+                </div>
+                <div class="container-icone" onclick="illu('3')">
+                    <div class="icone">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-globe" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M1.018 7.5h2.49c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5zM2.255 4H4.09a9.266 9.266 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.024 7.024 0 0 0 2.255 4zM8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm-.5 1.077c-.67.204-1.335.82-1.887 1.855-.173.324-.33.682-.468 1.068H7.5V1.077zM7.5 5H4.847a12.5 12.5 0 0 0-.338 2.5H7.5V5zm1 2.5V5h2.653c.187.765.306 1.608.338 2.5H8.5zm-1 1H4.51a12.5 12.5 0 0 0 .337 2.5H7.5V8.5zm1 2.5V8.5h2.99a12.495 12.495 0 0 1-.337 2.5H8.5zm-1 1H5.145c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12zm-2.173 2.472a6.695 6.695 0 0 1-.597-.933A9.267 9.267 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM1.674 11H3.82a13.651 13.651 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5zm8.999 3.472A7.024 7.024 0 0 0 13.745 12h-1.834a9.278 9.278 0 0 1-.641 1.539 6.688 6.688 0 0 1-.597.933zM10.855 12H8.5v2.923c.67-.204 1.335-.82 1.887-1.855A7.98 7.98 0 0 0 10.855 12zm1.325-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm.312-3.5h2.49a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5zM11.91 4a9.277 9.277 0 0 0-.64-1.539 6.692 6.692 0 0 0-.597-.933A7.024 7.024 0 0 1 13.745 4h-1.834zm-1.055 0H8.5V1.077c.67.204 1.335.82 1.887 1.855.173.324.33.682.468 1.068z" />
+                        </svg>
+                    </div>
+                    <div class="text">
+                        <!-- <h3>SMS et mails de rappel automatique</h3> -->
+                    </div>
+                </div>
+                <div class="container-icone" onclick="illu('4')">
+                    <div class="icone">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-laptop" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M13.5 3h-11a.5.5 0 0 0-.5.5V11h12V3.5a.5.5 0 0 0-.5-.5zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2h-11z" />
+                            <path d="M0 12h16v.5a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5V12z" />
+                        </svg>
+                    </div>
+                    <div class="text">
+                        <!-- <h3>Dématérialisation</h3> -->
+                    </div>
+                </div>
+                <div class="container-icone" onclick="illu('5')">
+                    <div class="icone">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-pen" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M5.707 13.707a1 1 0 0 1-.39.242l-3 1a1 1 0 0 1-1.266-1.265l1-3a1 1 0 0 1 .242-.391L10.086 2.5a2 2 0 0 1 2.828 0l.586.586a2 2 0 0 1 0 2.828l-7.793 7.793zM3 11l7.793-7.793a1 1 0 0 1 1.414 0l.586.586a1 1 0 0 1 0 1.414L5 13l-3 1 1-3z" />
+                            <path fill-rule="evenodd"
+                                d="M9.854 2.56a.5.5 0 0 0-.708 0L5.854 5.855a.5.5 0 0 1-.708-.708L8.44 1.854a1.5 1.5 0 0 1 2.122 0l.293.292a.5.5 0 0 1-.707.708l-.293-.293z" />
+                            <path
+                                d="M13.293 1.207a1 1 0 0 1 1.414 0l.03.03a1 1 0 0 1 .03 1.383L13.5 4 12 2.5l1.293-1.293z" />
+                        </svg>
+                    </div>
+                    <div class="text">
+                        <!-- <h3>Signature électronique</h3> -->
+                    </div>
+                </div>
+                <div class="container-icone" onclick="illu('6')">
+                    <div class="icone">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart4" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
+                        </svg>
+                    </div>
+                    <div class="text">
+                        <!-- <h3>Apport de nouveaux clients et respect de la RGPD</h3> -->
+                    </div>
+                </div>
+                <div class="container-icone" onclick="illu('7')">
+                    <div class="icone">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-newspaper" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M0 2A1.5 1.5 0 0 1 1.5.5h11A1.5 1.5 0 0 1 14 2v12a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 0 14V2zm1.5-.5A.5.5 0 0 0 1 2v12a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 .5-.5V2a.5.5 0 0 0-.5-.5h-11z" />
+                            <path fill-rule="evenodd"
+                                d="M15.5 3a.5.5 0 0 1 .5.5V14a1.5 1.5 0 0 1-1.5 1.5h-3v-1h3a.5.5 0 0 0 .5-.5V3.5a.5.5 0 0 1 .5-.5z" />
+                            <path
+                                d="M2 3h10v2H2V3zm0 3h4v3H2V6zm0 4h4v1H2v-1zm0 2h4v1H2v-1zm5-6h2v1H7V6zm3 0h2v1h-2V6zM7 8h2v1H7V8zm3 0h2v1h-2V8zm-3 2h2v1H7v-1zm3 0h2v1h-2v-1zm-3 2h2v1H7v-1zm3 0h2v1h-2v-1z" />
+                        </svg>
+                    </div>
+                    <div class="text">
+                        <!-- <h3>Factures et attestations qui se génèrent automatiquement
+                            Création de devis et avoir intégrée
+                        </h3> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+      
+
+
+        <section id="question">
+            <div class="container">
+                
+                <div class="left-question">
+                    <figure></figure>
+                </div>
+
+                <div class="right-question">
+                    <div class="title">
+                        <h2>Des Questions ?</h2>
+                    </div>
+                    <div id="text-question">
+                        <h3>Des solutions à vos problèmes</h3>
+                        <p>Parce qu'il arrive que votre équipe prenne des congés ou soit temporairement absente,
+                            profitez
+                            d'une
+                            assistante administrative afin de ne pas perdre le rythme et le contact avec vos
+                            clients.<br>
+                            Vous n'avez pas de secrétaire et souhaitez être épaulé dans votre quotidien ? Confiez-nous
+                            votre
+                            standard et la relance de vos contrats pour un coût moindre qu'un poste fixe.
+                            Des solutions existent pour tous les besoins, faites nous une demande. </p>
+
+                        <h4>TEL : 09.73.21.51.78</h4>
+
+                    </div>
+                    <div id="container-register">
+                        <a href="" id="btn-register">S'inscrire</a>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+    </main>
+
+    <footer>
+        <div id="container-footer">
+            <div id="nav-footer">
+                <ul>
+                    <li>
+                        <a href="">Accueil</a>
+                    </li>
+                    <li>
+                        <a href="">Contact</a>
+                    </li>
+                    <li>
+                        <a href="">Mention Légales </a>
+                    </li>
+                    <li>
+                        <a href="">FAQ</a>
+                    </li>
+                </ul>
+            </div>
+            <div id="logo-footer">
+                <figure></figure>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/menu.js"></script>
+
+</body>
+
+</html>
